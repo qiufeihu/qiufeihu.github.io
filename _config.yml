@@ -99,5 +99,5 @@ theme: yilia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:qiufeihu/qiufeihu.github.io.git
+  repository: https://gh_token@github.com/qiufeihu/qiufeihu.github.io.git
   branch: master

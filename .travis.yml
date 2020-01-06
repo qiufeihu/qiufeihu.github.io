@@ -1,29 +1,30 @@
 language: node_js
 node_js: stable
 
-# S: Build Lifecycle
-install:
-  - npm install
-
-#before_script:
- # - npm install -g gulp
-
-script:
-  - hexo g
-
-after_script:
-  - cd ./public
-  - git init
-  - git config user.name "qiufeihu"
-  - git config user.email "qiufeihu@foxmail.com"
-  - git add .
-  - git commit -m "Update docs"
-  - git push --force --quiet "https://${BLOG_TOKEN}@${GH_REF}" master:master
-
-# E: Build LifeCycle
+# assign build branches
 branches:
   only:
     - blog-source
-env:
- global:
-   - GH_REF: github.com/qiufeihu/qiufeihu.github.io.git
+
+# cache this directory
+cache:
+  directories:
+    - node_modules
+    #- themes 主题没有更改时可以缓存
+# S: Build Lifecycle
+before_install:
+  - npm install -g hexo-cli # 安装 hexo
+#  - git clone https://github.com/renyuzh/hexo-theme-next.git themes/next # 主题没有更改时不用每次都下载安装一遍
+
+install:
+  - npm install # 安装 package.json 中的插件
+
+script:
+  - hexo generate
+
+after_success:
+  - git config --global user.name "qiufeihu"
+  - git config --global user.email "qiufeihu@foxmail.com"
+  - sed -i "s/gh_token/${BLOG_TOKEN}/g" _config.yml #使用travisCI中配置的token替换掉_config.yml中对应的占位符
+  - hexo deploy
+# E: Build LifeCycle   
