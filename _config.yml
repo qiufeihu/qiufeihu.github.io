@@ -4,16 +4,16 @@
 
 # Site
 title: 邱飞虎@博客
-subtitle: '这是一个神奇的博客'
+subtitle: '用技术改变未来，用知识改变自己'
 description: '希望喜欢计算机和编程的小伙伴能一起加入！！！O(∩_∩)O哈哈~'
 keywords: '邱飞虎,博客,计算机,java,架构师'
 author: 邱飞虎
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.qiufeihu.me
+url: https://www.qiufeihu.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -101,3 +101,22 @@ deploy:
   type: git
   repository: https://gh_token@github.com/qiufeihu/qiufeihu.github.io.git
   branch: master
+
+jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: false
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true

@@ -1,19 +1,19 @@
 ﻿# Header-菜单
 menu:
-  主页: /
-  我的知乎: https://www.zhihu.com/people/waqiufeihu
-  随笔: /tags/随笔/
+  #主页: /
+  #我的知乎: https://www.zhihu.com/people/waqiufeihu
+  #随笔: /tags/随笔/
 
 # subNav-子导航
 subNav:
-  github: "#"
-  gitee: "#" # 码云
-  jianshu: "#" #简书
-  cnblog: "#"
+  github: "https://github.com/qiufeihu"
+  #gitee: "#" # 码云
+  #jianshu: "#" #简书
+  #cnblog: "#"
   #blog: "#"
   #csdn: "#"
   #rss: "#"
-  #zhihu: "#"
+  zhihu: "https://www.zhihu.com/people/waqiufeihu"
   #qq: "img/2434387555.jpg"
   #weixin: "img/weixin_.png"
   #weibo: "#"
@@ -63,7 +63,7 @@ open_in_new:
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording: '谢谢你的爱❤️'
+reward_wording: '谢谢你的打赏❤️'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
 alipay: /img/alipay.jpeg
 # 微信二维码图片地址
@@ -192,8 +192,8 @@ apple_touch_icon: '/apple-touch-icon-180x180.png'
 # Tab Title Change | 标签页标题切换
 tab_title_change:
   enable: true
-  left_tab_title: '(つェ⊂) 我藏好了哦~ '
-  return_tab_title: '(*´∇｀*) 被你发现啦~ '
+  left_tab_title: '用技术改变世界'
+  return_tab_title: '未来可期^_^'
 
 # https://github.com/willin/hexo-wordcount
 # 是否开启字数统计(关闭请设置enable为false)
@@ -282,4 +282,4 @@ friends:
   #   url: https://blog.csdn.net/qq_30930805
 
 # 关于我
-aboutme: 主要涉及技术：<br>Java后端开发、前端开发、<br>公众号开发、开源爱好者、Linux<br>欢迎大家交流学习O(∩_∩)O哈哈~
+aboutme: 主要涉及技术：<br>Java后端开发、前端开发、机器学习、数学、经济、金融<br>任何事在没有弄明白之前都是复杂的<br>欢迎大家交流学习O(∩_∩)O哈哈~
