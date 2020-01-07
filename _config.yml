@@ -7,7 +7,7 @@ title: 邱飞虎@博客
 subtitle: '这是一个神奇的博客'
 description: '希望喜欢计算机和编程的小伙伴能一起加入！！！O(∩_∩)O哈哈~'
 keywords: '邱飞虎,博客,计算机,java,架构师'
-author: Qiu Feihu
+author: 邱飞虎
 language: zh-CN
 timezone: ''
 
@@ -93,7 +93,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: yilia
+theme: yilia-plus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
