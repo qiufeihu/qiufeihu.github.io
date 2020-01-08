@@ -280,6 +280,12 @@ friends:
   #   url: https://www.jianshu.com/u/02cbf31a043a
   # CSDN:
   #   url: https://blog.csdn.net/qq_30930805
+  方志明的专栏:
+     url: https://www.fangzhipeng.com
+  莫凡Python:
+     url: https://morvanzhou.github.io
+  商城项目:
+     url: https://github.com/macrozheng/mall-learning   
 
 # 关于我
 aboutme: 主要涉及技术：<br>Java后端开发、前端开发、机器学习、数学、经济、金融<br>任何事在没有弄明白之前都是复杂的<br>欢迎大家交流学习O(∩_∩)O哈哈~
